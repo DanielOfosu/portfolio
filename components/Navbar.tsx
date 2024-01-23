@@ -7,7 +7,6 @@ const Navbar = () => {
             <a href="#journey" style={styles.link}>Experience</a>
             <a href="#tenets" style={styles.link}>Tenets</a>
             <a href="#blog" style={styles.link}>Blog</a>
-            <div style={styles.glass}></div>
         </nav>
     );
 };
