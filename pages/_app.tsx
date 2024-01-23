@@ -5,7 +5,9 @@ import ScrollObserver from '../utils/scroll-observer'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ScrollObserver>
-      <Component {...pageProps} />
+      <div style={{ scrollBehavior: 'smooth' }}>
+        <Component {...pageProps} />
+      </div>
     </ScrollObserver>
   )
 }

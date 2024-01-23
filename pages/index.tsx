@@ -1,35 +1,40 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Navbar from '../components/Navbar'
 import Features from '../components/Features'
+import Journey from '../components/Journey'
 import Hero from '../components/Hero'
-//TODO: Replace the images here with content on my 4 core areas and the links so that they scroll to that area
+import Tenets from '../components/Tenets'
+import Blog from '../components/Blog'
+import FeatureCard from '../components/FeatureCard'
+import CircleHeatIcon from '../public/circle-heat.svg'; // Import the SVG as a React component
+
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Parallax Effect with React</title>
+        <title>Daniel Ofosu</title>
         <link rel="icon" href="/favicon.ico" />
+        <style>{`
+          html {
+            scroll-behavior: smooth;
+          }
+        `}</style>
       </Head>
+      <Navbar />
       <Hero />
       <Features />
-      
+      <div id="journey">
+        <Journey />
+      </div>
+      <div id="tenets">
+        <Tenets />
+      </div>
+      <div id="blog">
+        <Blog />
+      </div>
       <section className="p-20 lg:p-40 text-center text-sm text-gray-400 border-t border-gray-100 w-full bg-white">
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-1">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div key={i}>
-              <Image
-                width={2400}
-                height={1600}
-                layout="responsive"
-                src={`/${i}.jpg`}
-                alt="image"
-                loading="lazy"
-                className="object-cover h-full w-full"
-              />
-            </div>
-          ))}
-        </div>
         <div className="mt-20 lg:mt-40">
           Designed and built by{' '}
           <a href="https://www.linkedin.com/in/danielofosu/">

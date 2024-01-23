@@ -11,7 +11,7 @@ const Features = () => {
   const { scrollY } = useContext(ScrollContext)
   const refContainer = useRef<HTMLDivElement>(null)
 
-  const numOfPages = 4
+  const numOfPages = 5
   let progress = 0
 
   const { current: elContainer } = refContainer
@@ -30,7 +30,6 @@ const Features = () => {
 
   return (
     <>
-    <Navbar />
     <section className="w-full bg-white">
       <div
         ref={refContainer}
@@ -40,25 +39,31 @@ const Features = () => {
           className={`transition-opacity ease-in-out duration-200 after:content-['_']`}
           style={{ opacity: opacityForBlock(progress, 0) }}
         >
-          Skilled Technologist. Innovative Builder.
+          Skilled Technologist.
         </span>
         <span
           className={`transition-opacity ease-in-out duration-200 after:content-['_']`}
           style={{ opacity: opacityForBlock(progress, 1) }}
         >
-          Foundations in machine learning, data processing, strategy.
+          Innovative Builder.
         </span>
         <span
           className={`transition-opacity ease-in-out duration-200 after:content-['_']`}
           style={{ opacity: opacityForBlock(progress, 2) }}
         >
-          Driven by a Passion for Innovation and Creativity.
+          Analytically Minded. 
         </span>
         <span
           className={`transition-opacity ease-in-out duration-200 after:content-['_']`}
           style={{ opacity: opacityForBlock(progress, 3) }}
         >
-          Analytically Minded, Communicative, with an Aversion to Mediocrity.
+          Interpersonally Adept.
+        </span>
+        <span
+          className={`transition-opacity ease-in-out duration-200 after:content-['_']`}
+          style={{ opacity: opacityForBlock(progress, 4) }}
+        >
+          Committed to Excellence.
         </span>
       </div>
     </section>

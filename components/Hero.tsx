@@ -20,11 +20,11 @@ const Hero = () => {
     >
       <Image
         width={2400}
-        height={800} // Adjusted height to be 50% shorter
-        src="/zoltan-tasi-Kl-NNqvHCgw-unsplash.jpg"
+        height={800}
+        src="/mads-schmidt-rasmussen-6YmzwamGzCg-unsplash.jpg"
         alt="hero image"
         className="object-cover absolute w-full h-full"
-        style={{ filter: 'brightness(50%)' }} // Add filter to make the image darker
+        style={{ filter: 'brightness(100%)' }}
       />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-bold flex flex-col items-center justify-center">
         <img
@@ -33,7 +33,7 @@ const Hero = () => {
           className="w-120 h-120 mb-2"
           style={{
             background: 'none',
-            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', // Add box shadow to memoji
+            boxShadow: 'none', // Remove the box shadow
           }}
         />
         <div className="flex flex-col items-center justify-center">
@@ -41,6 +41,7 @@ const Hero = () => {
             className="ml-2 text-7xl font-sf-regular"
             style={{
               textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)', // Add text shadow to Daniel Ofosu text
+              background: 'none', // Remove the background
             }}
           >
             Daniel Ofosu
