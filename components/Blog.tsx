@@ -5,9 +5,10 @@ import FeatureCard from '../components/FeatureCard'
 interface Post {
     title: string;
     content: string;
-  }
+    pubDate: string; // Add the 'pubDate' property
+}
   
-  const Blog = () => {
+const Blog = () => {
     const { scrollY } = useContext(ScrollContext)
     const refContainer = useRef<HTMLDivElement>(null)
   
@@ -18,21 +19,21 @@ interface Post {
     const [currentPostIndex, setCurrentPostIndex] = useState(0); // Store the index of the current post
   
     useEffect(() => {
-      fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@danuuo')
+        fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@danuuo')
         .then(response => response.json())
         .then(data => {
-          const res = data.items
-          const posts = res.filter((item: { categories: any[] }) => item.categories.length > 0)
-          setPosts(posts) // Set all posts
+            const res = data.items
+            const posts = res.filter((item: { categories: any[] }) => item.categories.length > 0)
+            setPosts(posts) // Set all posts
         });
     }, []);
   
     const handleNextPost = () => {
-      setCurrentPostIndex(prevIndex => prevIndex + 1 < posts.length ? prevIndex + 1 : prevIndex);
+        setCurrentPostIndex(prevIndex => prevIndex + 1 < posts.length ? prevIndex + 1 : prevIndex);
     }
   
     const handlePrevPost = () => {
-      setCurrentPostIndex(prevIndex => prevIndex - 1 >= 0 ? prevIndex - 1 : prevIndex);
+        setCurrentPostIndex(prevIndex => prevIndex - 1 >= 0 ? prevIndex - 1 : prevIndex);
     }
   
     return (
@@ -46,7 +47,7 @@ interface Post {
                         <div className="flex justify-between items-center">
                             <div>
                                 <h2 className="font-bold">{posts[currentPostIndex].title}</h2>
-                                <p>{new Date(posts[currentPostIndex].pubDate).toLocaleDateString()}</p>
+                                <p>{new Date(posts[currentPostIndex].pubDate).toLocaleDateString()}</p> // Fix the problem by adding the 'pubDate' property
                             </div>
                             <div>
                                 <button
@@ -74,8 +75,6 @@ interface Post {
             </section>
         </>
     );
-  }
+}
   
-
-
 export default Blog
