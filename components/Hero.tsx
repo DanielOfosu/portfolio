@@ -46,7 +46,7 @@ const Hero = () => {
             Daniel Ofosu
           </span>
         </div>
-        <div className="h-20" /> 
+        <div className="h-16" /> 
         
         <div className="flex flex-col items-center justify-center">
           <svg
