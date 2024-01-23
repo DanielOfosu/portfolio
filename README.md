@@ -1,23 +1,27 @@
-# Next.js + Tailwind CSS Example
+# Portfolio Page with Next.js, TypeScript, and Tailwind CSS
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This project is a portfolio page built using [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and styled with [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3). It showcases my work, skills, and professional experience.
 
-## Deploy your own
+## Project Structure
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+- `pages/`: This directory contains all the page components of the website. Each file corresponds to a route on the website.
+- `components/`: This directory contains reusable React components used across different pages.
+- `public/`: This directory contains static files like images, fonts, etc.
+- `styles/`: This directory contains global CSS files.
+- `utils/`: This directory contains utility functions.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Features
 
-## How to use
+- **Blog**: A component that fetches and displays posts from a Medium RSS feed. Users can navigate between posts.
+- **FeatureCard**: A reusable component that displays a feature with an icon and description.
+- **Features**: A component that displays a list of features.
+- **Hero**: The hero section of the website.
+- **Journey**: A component that displays the journey or timeline.
+- **Navbar**: The navigation bar of the website.
+- **Tenets**: A component that displays the tenets or principles.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## Contributing
+If you have suggestions for how I could improve this project, please let me know or contribute directly to the code.
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app -- --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## License
+This project is open source and available under the MIT License.
