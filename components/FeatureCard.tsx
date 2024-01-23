@@ -24,6 +24,7 @@ const styles = {
     width: 300,
     marginBottom: 20,
     display: 'flex',
+    flexDirection: 'column' as 'column',
     alignItems: 'flex-start',
   },
   iconContainer: {

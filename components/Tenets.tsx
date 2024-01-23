@@ -59,7 +59,7 @@ const Tenets = () => {
         ref={refContainer}
         className="h-full bg-black bg-opacity-0 backdrop-filter backdrop-blur-lg rounded-lg w-full max-w-7xl mx-auto p-3 md:p-6"
         style={{
-          borderBottom: '0.5px solid #ccc',
+          borderBottom: '1px solid #ccc',
         }}
       >
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px' }}>
