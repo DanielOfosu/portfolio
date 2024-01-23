@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Features from '../components/Features'
 import Hero from '../components/Hero'
-
+//TODO: Replace the images here with content on my 4 core areas and the links so that they scroll to that area
 const Home: NextPage = () => {
   return (
     <div>
@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       </Head>
       <Hero />
       <Features />
-
+      
       <section className="p-20 lg:p-40 text-center text-sm text-gray-400 border-t border-gray-100 w-full bg-white">
         <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-1">
           {[1, 2, 3, 4, 5, 6].map((i) => (
@@ -31,14 +31,10 @@ const Home: NextPage = () => {
           ))}
         </div>
         <div className="mt-20 lg:mt-40">
-          Photo by{' '}
-          <a href="https://unsplash.com/@behrouzsasani?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            behrouz sasani
+          Designed and built by{' '}
+          <a href="https://www.linkedin.com/in/danielofosu/">
+            Daniel Ofosu
           </a>{' '}
-          on{' '}
-          <a href="https://unsplash.com/s/photos/portrait-photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            Unsplash
-          </a>
         </div>
       </section>
     </div>

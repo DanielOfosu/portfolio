@@ -1,6 +1,6 @@
 import { useContext, useRef } from 'react'
 import { ScrollContext } from '../utils/scroll-observer'
-
+import Navbar from './Navbar';
 const opacityForBlock = (sectionProgress: number, blockNo: number) => {
   const progress = sectionProgress - blockNo
   if (progress >= 0 && progress < 1) return 1
@@ -29,6 +29,8 @@ const Features = () => {
   }
 
   return (
+    <>
+    <Navbar />
     <section className="w-full bg-white">
       <div
         ref={refContainer}
@@ -38,28 +40,29 @@ const Features = () => {
           className={`transition-opacity ease-in-out duration-200 after:content-['_']`}
           style={{ opacity: opacityForBlock(progress, 0) }}
         >
-          A dramatically more powerful camera system.
+          Skilled Technologist. Innovative Builder.
         </span>
         <span
           className={`transition-opacity ease-in-out duration-200 after:content-['_']`}
           style={{ opacity: opacityForBlock(progress, 1) }}
         >
-          A display so responsive, every interaction feels new again.
+          Foundations in machine learning, data processing, strategy.
         </span>
         <span
           className={`transition-opacity ease-in-out duration-200 after:content-['_']`}
           style={{ opacity: opacityForBlock(progress, 2) }}
         >
-          The world's fastest smartphone chip. Exceptional durabispanty.
+          Driven by a Passion for Innovation and Creativity.
         </span>
         <span
           className={`transition-opacity ease-in-out duration-200 after:content-['_']`}
           style={{ opacity: opacityForBlock(progress, 3) }}
         >
-          And a huge leap in battery spanfe.
+          Analytically Minded, Communicative, with an Aversion to Mediocrity.
         </span>
       </div>
     </section>
+    </>
   )
 }
 
