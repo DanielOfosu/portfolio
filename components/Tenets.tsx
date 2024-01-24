@@ -19,32 +19,27 @@ const Tenets = () => {
     {
       iconSrc: "/rocket.svg",
       title: "Pursue Meaning",
-      description: "Engage in activities that resonate with your purpose and lead to meaningful outcomes."
+      description: "Engage in activities with purpose."
     },
     {
       iconSrc: "/circle-heat.svg",
       title: "Hold High Conviction",
-      description: "Stand with unwavering belief in your pursuits, especially when challenged."
+      description: "Have high conviction, but be open to new ideas."
     },
     {
       iconSrc: "/fire.svg",
       title: "Be Relentless",
-      description: "Push forward with determination, overcoming any barriers in your path."
+      description: "Push forward with determination to overcome challenges."
     },
     {
       iconSrc: "/hammer.svg",
       title: "Value Discipline",
-      description: "While motivation can ignite action, discipline ensures you achieve great results."
+      description: "Stay disciplined to ensure great results."
     },
     {
       iconSrc: "/sphere.svg",
       title: "View Objectively",
-      description: "Many adversities are simply a result of chance; perceive them without personal bias."
-    },
-    {
-      iconSrc: "/star-half.svg",
-      title: "Understanding Fit",
-      description: "Some individuals may not align with your path, not because they're bad, but because they're a different fit."
+      description: "Most adversities are simply a result of chance."
     }
   ];
 

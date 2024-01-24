@@ -51,7 +51,7 @@ const Journey = () => {
           <div className="col-span-1 flex flex-col text-white  border border-gray-600/30 rounded-3xl p-5  text-center items-center justify-center place-items-center place-content-center [text-wrap:balance] backdrop-filter backdrop-blur-lg bg-opacity-100 bg-[radial-gradient(169.40%_89.55%_at_94.76%_6.29%,rgba(0,0,0,0.40)_0%,rgba(255,255,255,0.05)_100%)] shadow-lg">
           <img src="/2560px-Neste_logo.svg.png" alt="Neste Logo" className="h-22 w-25 mb-7 mt-20" />
           <p className="text-xl/tight font-light font-sfpro text-white mb-7 mt-1 mr-10 ml-10">
-            Data Scientist at the<span style={{ color: '#0066B2', fontWeight: 'bold' }}> leading Energy firm in Finland. </span> Contributed to building data pipelines and developing ML models.
+             Developed <span style={{ color: '#0066B2', fontWeight: 'bold' }}> Machine Learning Models  </span> at the leading Energy firm in Finland. Contributed to building <span style={{ color: '#0066B2', fontWeight: 'bold' }}> data pipelines and operationalizing ML models. </span>
             Utilized <span style={{ color: '#0066B2', fontWeight: 'bold' }}>SQL, BigQuery, and Python Data Science tools</span> extensively, alongside Google productivity tools.
             Collaborated in a <span style={{ color: '#0066B2', fontWeight: 'bold' }}>self-sufficient Agile team</span>, executing plans and partnering with stakeholders.
           </p>

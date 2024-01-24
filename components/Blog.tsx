@@ -47,7 +47,7 @@ const Blog = () => {
                         <div className="flex justify-between items-center">
                             <div>
                                 <h2 className="font-bold">{posts[currentPostIndex].title}</h2>
-                                <p>{new Date(posts[currentPostIndex].pubDate).toLocaleDateString()}</p> // Fix the problem by adding the 'pubDate' property
+                                <p>{new Date(posts[currentPostIndex].pubDate).toLocaleDateString()}</p> 
                             </div>
                             <div>
                                 <button
