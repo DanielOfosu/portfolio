@@ -46,7 +46,7 @@ const Tenets = () => {
 
   return (
     <>
-    <section className={`w-full bg-black`}>
+    <section className={`w-full bg-gray-900 bg-opacity-100`}>
     <div className="text-4xl lg:text-7xl px-5 font-semibold text-white leading-none tracking-tight py-5 lg:py-40 mx-auto max-w-3xl">
     Guided by tenets that enable action, insightful dialogue, and pathways to growth.
         </div>

@@ -30,45 +30,47 @@ const Journey = () => {
 
   return (
     <>
-    <section className={`w-full`} style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95), black)', backgroundSize: 'cover', backgroundPosition: 'center', borderBottom: '1px solid black'}}>
-      <div
-        ref={refContainer}
-        className="h-full bg-black bg-opacity-0 backdrop-filter backdrop-blur-lg rounded-lg w-full max-w-7xl mx-auto p-3 md:p-6 mb-10"
-      >
-        <div className="text-4xl lg:text-7xl px-5 font-semibold text-white leading-none tracking-tight py-5 lg:py-40 mx-auto max-w-3xl">
-          Experienced in strategy, tech and data science.
-        </div>
-        <div className="grid grid-cols-3 gap-6">
-            <div className="col-span-2 flex flex-col text-black border border-gray-600/30 rounded-3xl p-5 text-center items-center justify-center place-items-center place-content-center [text-wrap:balance] backdrop-filter backdrop-blur-lg bg-opacity-80 bg-[radial-gradient(169.40%_89.55%_at_94.76%_6.29%,rgba(0,0,0,0.40)_0%,rgba(255,255,255,0.05)_100%)] shadow-lg">
-            <img src="/Boston_Consulting_Group_2020_logo.svg.png" alt="BCG Logo" className="h-32 w-42 mb-7" />
-            <p className="text-xl/tight font-light font-sfpro text-white mb-7 mt-1 mr-10 ml-10">
-              Accelerated the <span style={{ color: 'green', fontWeight: 'bold' }}>completion of a major Finnish energy project</span>, ensuring its timely success.
-              <span style={{ color: 'green', fontWeight: 'bold' }}> Developed a Zero Trust-based strategic architecture</span> for a leading Nordic bank, boosting security and efficiency.
-              Contributed to the <span style={{ color: 'green', fontWeight: 'bold' }}>retail and hydrogen strategies</span> of a key consumer energy company, fostering innovation.
-              Led a <span style={{ color: 'green', fontWeight: 'bold' }}>large-scale tech architecture assessment</span>, providing strategic recommendations for a major project.
-            </p>
+      <section className={`w-full`} style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.95), #121212)', backgroundSize: 'cover', backgroundPosition: 'center', borderBottom: '1px solid black'}}>
+        <div
+          ref={refContainer}
+          className="h-full bg-black bg-opacity-0 backdrop-filter backdrop-blur-lg rounded-lg w-full max-w-7xl mx-auto p-3 md:p-6 mb-10"
+        >
+          <div className="text-4xl lg:text-7xl px-5 font-semibold text-white leading-none tracking-tight py-5 lg:py-40 mx-auto max-w-3xl">
+            Experienced in tech strategy, data engineering and machine learning.
           </div>
-          <div className="col-span-1 flex flex-col text-white  border border-gray-600/30 rounded-3xl p-5  text-center items-center justify-center place-items-center place-content-center [text-wrap:balance] backdrop-filter backdrop-blur-lg bg-opacity-100 bg-[radial-gradient(169.40%_89.55%_at_94.76%_6.29%,rgba(0,0,0,0.40)_0%,rgba(255,255,255,0.05)_100%)] shadow-lg">
-          <img src="/2560px-Neste_logo.svg.png" alt="Neste Logo" className="h-22 w-25 mb-7 mt-20" />
-          <p className="text-xl/tight font-light font-sfpro text-white mb-7 mt-1 mr-10 ml-10">
-             Developed <span style={{ color: '#0066B2', fontWeight: 'bold' }}> Machine Learning Models  </span> at the leading Energy firm in Finland. Contributed to building <span style={{ color: '#0066B2', fontWeight: 'bold' }}> data pipelines and operationalizing ML models. </span>
-            Utilized <span style={{ color: '#0066B2', fontWeight: 'bold' }}>SQL, BigQuery, and Python Data Science tools</span> extensively, alongside Google productivity tools.
-            Collaborated in a <span style={{ color: '#0066B2', fontWeight: 'bold' }}>self-sufficient Agile team</span>, executing plans and partnering with stakeholders.
-          </p>
+          <div className="grid grid-cols-3 gap-6">
+            <div className="col-span-2 flex flex-col text-black border border-gray-600/30 rounded-3xl p-5 text-center items-center justify-center place-items-center place-content-center [text-wrap:balance] backdrop-filter backdrop-blur-lg bg-opacity-80 bg-[radial-gradient(169.40%_89.55%_at_94.76%_6.29%,rgba(0,128,0,0.05)_0%,rgba(204,255,204,0.0)_100%)] shadow-lg">
+              <img src="/Boston_Consulting_Group_2020_logo.svg.png" alt="BCG Logo" className="h-32 w-42 mb-7" />
+              <p className="text-2xl/tight font-light  text-[#E0E0E0] mb-7 mt-1 mr-10 ml-10">
+                Accelerated major Finnish energy projects. Designed significant CRM architecture changes.
+              </p>
+            </div>
+            <div className="col-span-1 flex flex-col text-white  border border-gray-600/30 rounded-3xl p-5  text-center items-center justify-center place-items-center place-content-center [text-wrap:balance] backdrop-filter backdrop-blur-lg bg-opacity-100 bg-[radial-gradient(169.40%_89.55%_at_94.76%_6.29%,rgba(0,0,255,0.05)_0%,rgba(204,204,255,0.0)_100%)]
+ shadow-lg">
+              <img src="/2560px-Neste_logo.svg.png" alt="Neste Logo" className="h-22 w-25 mb-7 mt-20" />
+              <p className="text-2xl/tight font-light  text-[#E0E0E0] mb-7 mt-1 mr-10 ml-10">
+                Developed Machine Learning Models and Pipelines.
+              </p>
+            </div>
+            <div className="col-span-1 flex flex-col text-white  border border-gray-600/30 rounded-3xl p-5  text-center items-center justify-center place-items-center place-content-center [text-wrap:balance] backdrop-filter backdrop-blur-lg bg-opacity-100 bg-[radial-gradient(169.40%_89.55%_at_94.76%_6.29%,rgba(128,128,128,0.05)_0%,rgba(245,245,245,0.0)_100%)]
 
-          </div>
-          <div className="col-span-3 flex flex-col text-white  border border-gray-600/30 rounded-3xl p-35  text-center items-center justify-center place-items-center place-content-center [text-wrap:balance] backdrop-filter backdrop-blur-lg bg-opacity-100 bg-[radial-gradient(169.40%_89.55%_at_94.76%_6.29%,rgba(0,0,0,0.40)_0%,rgba(255,255,255,0.05)_100%)] shadow-lg">
-          <img src="/Amazon_logo.svg.png" alt="Amazon Logo" className="h-32 w-42 mb-7 mt-20" />
-          <p className="text-xl/tight font-light font-sfpro text-white mb-7 mt-1 mr-10 ml-10">
-            Spearheaded the <span style={{ color: '#FF9900', fontWeight: 'bold' }}>release of a global application pipeline</span> at Amazon, enhancing transportation planning.
-            Achieved <span style={{ color: '#FF9900', fontWeight: 'bold' }}>AWS Solutions Architect Associate Certification</span>, showcasing expertise.
-            Mastered <span style={{ color: '#FF9900', fontWeight: 'bold' }}>Scala, Spark, and AWS services</span>, improving data handling and analysis.
-          </p>
-
+ shadow-lg">
+              <img src="/Aalto_University_logo.svg.png" alt="Aalto University Logo" className="h-32 w-42 mb-7 mt-20" />
+              <p className="text-2xl/tight font-light  text-[#E0E0E0] mb-7 mt-1 mr-10 ml-10">
+                Degrees in Computer Science & Management. Studying Degree #3 in Computational Methods.
+              </p>
+            </div>
+            <div className="col-span-2 flex flex-col text-white  border border-gray-600/30 rounded-3xl p-5  text-center items-center justify-center place-items-center place-content-center [text-wrap:balance] backdrop-filter backdrop-blur-lg bg-opacity-100 bg-[radial-gradient(169.40%_89.55%_at_94.76%_6.29%,rgba(255,165,0,0.05)_0%,rgba(255,255,204,0.0)_100%)]
+ shadow-lg">
+              <img src="/Amazon_logo.svg.png" alt="Amazon Logo" className="h-32 w-42 mb-7 mt-20" />
+              <p className="text-2xl/tight font-light  text-[#E0E0E0] mb-7 mt-1 mr-10 ml-10">
+                Programming a global petabyte-scale pipeline in Scala. Key role in full release of given pipeline.
+              </p>
+            </div>
+            
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   )
 }

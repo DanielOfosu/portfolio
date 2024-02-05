@@ -45,12 +45,10 @@ const styles = {
     marginBottom: 10,
     fontSize: 18,
     color: 'white', // Change text color to white
-    fontFamily: 'SF Pro Regular', // Change font to SF Pro Regular
   },
   description: {
     margin: 0,
-    color: 'white', // Change text color to white
-    fontFamily: 'SF Pro Regular', // Change font to SF Pro Regular
+    color: 'grey', // Change text color to white
   },
 };
 

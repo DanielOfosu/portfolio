@@ -24,7 +24,6 @@ const styles = {
         width: '100%',
         height: '60px',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        fontFamily: 'SF Pro Light',
         color: 'white',
         backdropFilter: 'blur(10px)', // Add backdrop filter with blur
         zIndex: 1000,

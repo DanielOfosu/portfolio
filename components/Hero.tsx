@@ -12,6 +12,10 @@ const Hero = () => {
   if (elContainer) {
     progress = Math.min(1, scrollY / elContainer.clientHeight)
   }
+  
+  // Calculate opacity based on scroll progress. Elements fully visible initially and disappear as the user scrolls down one page height
+  const opacity = 1 - progress;
+
   return (
     <div
       ref={refContainer}
@@ -26,7 +30,7 @@ const Hero = () => {
         className="object-cover absolute w-full h-full"
         style={{ filter: 'brightness(100%)' }}
       />
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-bold flex flex-col items-center justify-center">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-bold flex flex-col items-center justify-center" style={{ opacity }}>
         <img
           src="/memoji.png"
           alt="memoji"
@@ -34,35 +38,22 @@ const Hero = () => {
           style={{
             background: 'none',
             boxShadow: 'none', // Remove the box shadow
+            // Apply dynamic opacity based on scroll progress
+            opacity
           }}
         />
         <div className="flex flex-col items-center justify-center">
           <span
-            className="ml-2 text-7xl font-sf-regular"
+            className="ml-2 text-7xl"
             style={{
               textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)', // Add text shadow to Daniel Ofosu text
               background: 'none', // Remove the background
+              // Apply dynamic opacity based on scroll progress
+              opacity
             }}
           >
             Daniel Ofosu
           </span>
-        </div>
-        <div className="h-16" /> 
-        
-        <div className="flex flex-col items-center justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="w-12 h-12 animate-bounce"
-            style={{ zIndex: -1 }} // Set the z-index to -1 to bring the arrow underneath
-          >
-            <path d="M12 5v14M5 12l7 7 7-7" />
-          </svg>
         </div>
       </div>
     </div>
