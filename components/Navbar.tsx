@@ -3,10 +3,10 @@ import React from 'react';
 const Navbar = () => {
     return (
         <nav style={styles.navbar}>
-            <a href="#" style={styles.link}>Home</a>
             <a href="#journey" style={styles.link}>Experience</a>
             <a href="#tenets" style={styles.link}>Tenets</a>
             <a href="#blog" style={styles.link}>Blog</a>
+            <a href="https://github.com/DanielOfosu/portfolio" style={styles.link}>Github</a>
         </nav>
     );
 };
@@ -18,7 +18,7 @@ type Position = 'fixed' | 'absolute' | 'relative'; // Define the Position type
 const styles = {
     navbar: {
         display: 'flex',
-        justifyContent: 'space-around',
+        justifyContent: 'center',  // Change to center
         position: 'fixed' as Position,
         top: 0,
         width: '100%',
@@ -34,7 +34,7 @@ const styles = {
         textDecoration: 'none',
         color: 'white',
         fontWeight: 'regular',
-        margin: '0 30px',
+        margin: '0 40px',  // Further reduced margin
         fontSize: '16px',
     },
     glass: {

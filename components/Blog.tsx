@@ -49,7 +49,7 @@ const Blog = () => {
     return (
         <>
             <section className={`w-full bg-white`}>
-                <div className="text-4xl lg:text-7xl px-5 font-regular text-black leading-none tracking-tight py-5 lg:py-40 mx-auto max-w-3xl">
+                <div className="text-4xl lg:text-7xl font-regular text-black leading-none tracking-tight py-5 lg:py-40 mx-auto max-w-7xl">
                     Blog
                 </div>
                 {posts.length > 0 && (
