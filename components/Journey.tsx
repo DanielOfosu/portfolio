@@ -30,7 +30,7 @@ const Journey = () => {
 
   return (
     <>
-      <section className={`w-full`} style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.95), #121212)', backgroundSize: 'cover', backgroundPosition: 'center', borderBottom: '1px solid black'}}>
+      <section className={`w-full`} style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.75), #151515, #121212)', backgroundSize: 'cover', backgroundPosition: 'center', borderBottom: '1px solid black'}}>
         <div
           ref={refContainer}
           className="h-full bg-black bg-opacity-0 backdrop-filter backdrop-blur-lg rounded-lg w-full max-w-7xl mx-auto p-3 md:p-6 mb-10"

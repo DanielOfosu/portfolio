@@ -44,15 +44,15 @@ const Hero = () => {
         />
         <div className="flex flex-col items-center justify-center">
           <span
-            className="ml-2 text-7xl"
+            className="ml-2 text-8xl text-gray-100"
             style={{
-              textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)', // Add text shadow to Daniel Ofosu text
+              textShadow: '0 2px 4px rgba(0, 0, 0, 0.8)', // Add text shadow to Daniel Ofosu text
               background: 'none', // Remove the background
               // Apply dynamic opacity based on scroll progress
               opacity
             }}
           >
-            Daniel Ofosu
+            DANIEL OFOSU
           </span>
         </div>
       </div>
